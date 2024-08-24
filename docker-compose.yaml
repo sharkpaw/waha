@@ -39,7 +39,7 @@ services:
     volumes:
       # Store sessions in the .sessions folder (comment it if you're using MongoDB)
       # Doesn't work with WAHA Core
-      - './.sessions:/app/.sessions'
+      # - './.sessions:/app/.sessions'
 
       # https://waha.devlike.pro/docs/how-to/storages/#save-media-files-between-the-container-restarts
       - './.media:/app/.media'
@@ -57,8 +57,8 @@ services:
       # If you know the right URL, you can use it here.
       # Use any port in WHATSAPP_API_PORT and domain in WHATSAPP_API_HOSTNAME
       # https://waha.devlike.pro/docs/how-to/config/#common
-      #- WHATSAPP_API_PORT=3000
-      #- WHATSAPP_API_HOSTNAME=localhost
+      - WHATSAPP_API_PORT=3000
+      - WHATSAPP_API_HOSTNAME="https://waha.ahyhost.com"
 
       #
       # Security
