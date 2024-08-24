@@ -15,7 +15,7 @@ services:
     #
     # Image
     #
-    image: devlikeapro/waha-plus:latest # or devlikeapro/waha:latest if you're using WAHA Core
+    image: devlikeapro/waha:latest # or devlikeapro/waha:latest if you're using WAHA Core
     #
     # We strongly recommend using the pinned version of WAHA
     # https://waha.devlike.pro/docs/how-to/engines/#versions
@@ -63,11 +63,7 @@ services:
       #
       # Security
       #
-      # https://waha.devlike.pro/docs/how-to/security/
-      #
-      - WHATSAPP_API_KEY=321
-      - WAHA_DASHBOARD_USERNAME=waha
-      - WAHA_DASHBOARD_PASSWORD=waha
+      # https://waha.devlike.pro/docs/how-to/security
       #- WHATSAPP_SWAGGER_USERNAME=admin
       #- WHATSAPP_SWAGGER_PASSWORD=admin
 
@@ -76,9 +72,9 @@ services:
       #
       # https://waha.devlike.pro/docs/how-to/waha-dashboard/#configuration
       # Enabled by default
-      #- WAHA_DASHBOARD_ENABLED=true
-      #- WAHA_DASHBOARD_USERNAME=waha
-      #- WAHA_DASHBOARD_PASSWORD=waha
+      - WAHA_DASHBOARD_ENABLED=true
+      - WAHA_DASHBOARD_USERNAME=waha
+      - WAHA_DASHBOARD_PASSWORD=Sakarya5481
 
       #
       # Logging
